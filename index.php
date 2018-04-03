@@ -34,6 +34,7 @@
                  { 
                      if(!$name)
                     {$errors .="<p>Please enter your name!</p>";
+                            }
                     }
                      else{
                      $name = filter_var($name,FILTER_SANITIZE_STRING);
