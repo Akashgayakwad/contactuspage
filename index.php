@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -54,7 +55,7 @@
                      }
                      if($errors)
                      {
-                         $resultmessage = '<div class="alert alert-danger>'. $errors .'</div>';
+                         $resultmessage = '<div class="alert alert-danger">'. $errors .'</div>';
                      }
                      else{
                         $to= "akashgayakwad123@gmail.com";
@@ -69,7 +70,7 @@
                         </strong></p>"; 
                          $headers="content-type: text/html";
                          if(mail($to, $subject, $message, $headers)){
-                             $resultmessage='<div class="alert alert-success ">Thanks for the message. We will get back to you ASAP.</div>';
+                             $resultmessage='<div class="alert alert-success">Thanks for the message. We will get back to you ASAP.</div>';
                          }
                          else{
                              $resultmessage= '<div class="alert lert-warning">Unable to email. Please try again later!</div>';
